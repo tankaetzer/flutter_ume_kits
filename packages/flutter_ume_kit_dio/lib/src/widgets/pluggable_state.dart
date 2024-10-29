@@ -92,7 +92,7 @@ class DioPluggableState extends State<DioInspector> {
                   InspectorInstance.httpContainer.loadNextPage();
                 }
                 return _ResponseCard(
-                  key: ValueKey<int>(r.startTimeMilliseconds),
+                  key: ValueKey<int>(r?.startTimeMilliseconds ?? 0),
                   response: r,
                 );
               },
